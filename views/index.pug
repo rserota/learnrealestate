@@ -1,0 +1,31 @@
+extends layout
+
+block content
+    #dashboard-or-marketing
+        .container#dashboard.logged-in(v-if="loggedIn" v-cloak)
+            .space
+            .row
+                .col-sm-4
+                    include /views/dashboard/course-overview
+                    .space
+                .col-sm-8
+                    include /views/dashboard/xp-bar
+                    .space
+                    .row
+                        .col-sm-12
+                            include /views/dashboard/progress-pie-chart
+                    .row
+                        .col-sm-4
+                
+                    .space
+                    .row
+                        .col-sm-12
+                            //- include /views/dashboard/badges/badges
+                        
+        .container#marketing.not-logged-in(v-if="!loggedIn" v-cloak)
+           
+
+block footer-scripts
+    script.
+        var sectionTotals = !{JSON.stringify(sectionTotals)}
+    script(src="/js/dashboardOrMarketing.vm.js")

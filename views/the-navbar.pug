@@ -1,0 +1,32 @@
+#the-navbar.navbar.navbar-default.navbar-fixed-top.navbar-inverse(role='navigation')
+    .container
+        .navbar-header
+            button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+                span.sr-only Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+            a.transition.re-label.navbar-brand(href='/') <span class="learn">learn</span> <span class="real-estate">real estate</span>
+        #login-or-profile.navbar-collapse.collapse
+            //- ul.nav.navbar-nav.text-center
+            ul.logged-in.nav.navbar-nav.navbar-right(v-if="loggedIn" v-cloak)
+                li
+                    a.transition.re-label(href='/') 
+                        span.nav-link-text Dashboard
+                        i.fa.fa-dashboard.fa-2x.nav-icon
+                li
+                    a.transition.re-label(href='/my-profile') 
+                        span.nav-link-text My Profile
+                        i.fa.fa-id-card.fa-2x.nav-icon
+                li
+                    a.transition.re-label(href='/logout')
+                        span.nav-link-text Log Out
+                        i.fa.fa-user-times.fa-2x.nav-icon
+            ul.not-logged-in.nav.navbar-nav.navbar-right(v-if="!loggedIn" v-cloak)
+                li
+                    a.re-label(href='#' data-toggle="modal" data-target="#login-modal") Log In
+		    
+.space
+.space
+
+include login-modal

@@ -1,0 +1,6 @@
+#day-streak-container.text-center
+    .text.center Current Day Streak:
+    .streak-gauge-container.relative
+        img(v-bind:src="streakGaugeImageSources[user.currentDayStreak]")
+        .absolute.day-streak-number {{user.currentDayStreak}}
+    p {{streakMessage}}

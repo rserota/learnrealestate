@@ -1,0 +1,55 @@
+html {
+  font-size: 16px;
+}
+body {
+  font-size: inherit;
+  font-family: 'Open Sans', sans-serif;
+  background-color: $mainColor;
+}
+h1,
+h2,
+h3 {
+  font-family: 'PT Serif', serif;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+hr {
+  border-bottom: 1px solid #000;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+aside {
+  font-size: 0.8rem;
+}
+code {
+  color: #1e90ff;
+}
+th,
+td {
+  border: 2px solid #ddd;
+  padding: 2px;
+}
+th {
+  text-align: center;
+}
+tr:nth-child(odd) {
+  background-color: #f5f5f5;
+}
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 991px) {
+  html {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 12px;
+  }
+}

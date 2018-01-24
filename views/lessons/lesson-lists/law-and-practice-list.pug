@@ -1,0 +1,240 @@
+extends /views/layout
+
+block content
+    #lesson-list
+        .space
+        .container-fluid.lesson-card-container.main-background
+            .container
+                h1.text-center Law And Practice
+                .space
+                h2.text-center Real Property Characteristics, Definitions, Ownership, Restrictions & Transfer (10 Hours)
+                .row
+                
+                    .col-sm-6.col-md-4.col-lg-3.text-center
+                        a.re-card.transition(href="/lessons/1/overview") 
+                            h3 Elements Of Real And Personal Property
+                            .mini-progress-bar-container
+                                .mini-progress-bar(v-bind:style="setProgressBarStyleFor('1')")
+                    .col-sm-6.col-md-4.col-lg-3.text-center
+                        a.re-card.transition(href="/lessons/2/overview") 
+                            h3 Fair Housing
+                            .mini-progress-bar-container
+                                .mini-progress-bar(v-bind:style="setProgressBarStyleFor('2')")
+                    .col-sm-6.col-md-4.col-lg-3.text-center
+                        a.re-card.transition(href="/lessons/3/overview") 
+                            h3 Estates in Real Property
+                            .mini-progress-bar-container
+                                .mini-progress-bar
+                    .col-sm-6.col-md-4.col-lg-3.text-center
+                        a.re-card.transition(href="/lessons/4/overview") 
+                            h3 Forms, Rights, Interests, and Obligations of Ownership
+                            .mini-progress-bar-container
+                                .mini-progress-bar
+                    .col-sm-6.col-md-4.col-lg-3.text-center
+                        a.re-card.transition(href="/lessons/5/overview") 
+                            h3 Land Use Controls and Restrictions - Public
+                            .mini-progress-bar-container
+                                .mini-progress-bar
+                    .col-sm-6.col-md-4.col-lg-3.text-center
+                        a.re-card.transition(href="/lessons/land-use-controls-and-restrictions-private") 
+                            h3 Land Use Controls and Restrictions - Private
+                            .mini-progress-bar-container
+                                .mini-progress-bar
+                    .col-sm-6.col-md-4.col-lg-3.text-center
+                        a.re-card.transition(href="/lessons/transfer-and-alienation-of-title-to-real-property-voluntary") 
+                            h3 Transfer and Alienation of Title to Real Property - Voluntary
+                            .mini-progress-bar-container
+                                .mini-progress-bar
+                    .col-sm-6.col-md-4.col-lg-3.text-center
+                        a.re-card.transition(href="/lessons/transfer-and-alienation-of-title-toreal-property-involuntary") 
+                            h3 Transfer and Alienation of Title to Real Property - Involuntary
+                            .mini-progress-bar-container
+                                .mini-progress-bar
+                    .col-sm-6.col-md-4.col-lg-3.text-center
+                        a.re-card.transition(href="/lessons/deeds-warranties-and-defects-in-title") 
+                            h3 Deeds, Warranties, and Defects in Title
+                            .mini-progress-bar-container
+                                .mini-progress-bar
+                    .col-sm-6.col-md-4.col-lg-3.text-center
+                        a.re-card.transition(href="/lessons/assurances-of-title") 
+                            h3 Assurances of Title
+                            .mini-progress-bar-container
+                                .mini-progress-bar
+                        .space
+
+        .container-fluid.lesson-card-container.alt-background
+            .space
+            .container
+                h2.text-center Valuation And Appraisal
+                .row
+                        
+
+                    .col-sm-6.col-md-4.col-lg-3.text-center
+                        a.re-card.transition(href="/lessons/elements-of-real-and-personal-property/overview") 
+                            h3 Elements of Real and Personal Property
+                            .mini-progress-bar-container
+                                .mini-progress-bar
+                    .col-sm-6.col-md-4.col-lg-3.text-center
+                        a.re-card.transition(href="/lessons/methods-of-legal-description") 
+                            h3 Methods of Legal Description
+                            .mini-progress-bar-container
+                                .mini-progress-bar
+                    .col-sm-6.col-md-4.col-lg-3.text-center
+                        a.re-card.transition(href="/lessons/estates-in-real-property") 
+                            h3 Estates in Real Property
+                            .mini-progress-bar-container
+                                .mini-progress-bar
+                    .col-sm-6.col-md-4.col-lg-3.text-center
+                        a.re-card.transition(href="/lessons/forms-rights-interests-and-obligations-of-ownership") 
+                            h3 Forms, Rights, Interests, and Obligations of Ownership
+                            .mini-progress-bar-container
+                                .mini-progress-bar
+                    .col-sm-6.col-md-4.col-lg-3.text-center
+                        a.re-card.transition(href="/lessons/land-use-controls-and-restrictions-public") 
+                            h3 Land Use Controls and Restrictions - Public
+                            .mini-progress-bar-container
+                                .mini-progress-bar
+                    .col-sm-6.col-md-4.col-lg-3.text-center
+                        a.re-card.transition(href="/lessons/land-use-controls-and-restrictions-private") 
+                            h3 Land Use Controls and Restrictions - Private
+                            .mini-progress-bar-container
+                                .mini-progress-bar
+                    .col-sm-6.col-md-4.col-lg-3.text-center
+                        a.re-card.transition(href="/lessons/transfer-and-alienation-of-title-to-real-property-voluntary") 
+                            h3 Transfer and Alienation of Title to Real Property - Voluntary
+                            .mini-progress-bar-container
+                                .mini-progress-bar
+                    .col-sm-6.col-md-4.col-lg-3.text-center
+                        a.re-card.transition(href="/lessons/transfer-and-alienation-of-title-toreal-property-involuntary") 
+                            h3 Transfer and Alienation of Title to Real Property - Involuntary
+                            .mini-progress-bar-container
+                                .mini-progress-bar
+                    .col-sm-6.col-md-4.col-lg-3.text-center
+                        a.re-card.transition(href="/lessons/deeds-warranties-and-defects-in-title") 
+                            h3 Deeds, Warranties, and Defects in Title
+                            .mini-progress-bar-container
+                                .mini-progress-bar
+                    .col-sm-6.col-md-4.col-lg-3.text-center
+                        a.re-card.transition(href="/lessons/assurances-of-title") 
+                            h3 Assurances of Title
+                            .mini-progress-bar-container
+                                .mini-progress-bar
+                        .space
+        .container-fluid.lesson-card-container.main-background
+            .space
+            .container
+                h2.text-center Contracts, Agency Relationships with Buyer & Sellers, and Federal Requirements
+                .row
+                    .col-sm-6.col-md-4.col-lg-3.text-center
+                        a.re-card.transition(href="/lessons/elements-of-real-and-personal-property/overview") 
+                            h3 Elements of Real and Personal Property
+                            .mini-progress-bar-container
+                                .mini-progress-bar
+                    .col-sm-6.col-md-4.col-lg-3.text-center
+                        a.re-card.transition(href="/lessons/methods-of-legal-description") 
+                            h3 Methods of Legal Description
+                            .mini-progress-bar-container
+                                .mini-progress-bar
+                    .col-sm-6.col-md-4.col-lg-3.text-center
+                        a.re-card.transition(href="/lessons/estates-in-real-property") 
+                            h3 Estates in Real Property
+                            .mini-progress-bar-container
+                                .mini-progress-bar
+                    .col-sm-6.col-md-4.col-lg-3.text-center
+                        a.re-card.transition(href="/lessons/forms-rights-interests-and-obligations-of-ownership") 
+                            h3 Forms, Rights, Interests, and Obligations of Ownership
+                            .mini-progress-bar-container
+                                .mini-progress-bar
+                    .col-sm-6.col-md-4.col-lg-3.text-center
+                        a.re-card.transition(href="/lessons/land-use-controls-and-restrictions-public") 
+                            h3 Land Use Controls and Restrictions - Public
+                            .mini-progress-bar-container
+                                .mini-progress-bar
+                    .col-sm-6.col-md-4.col-lg-3.text-center
+                        a.re-card.transition(href="/lessons/land-use-controls-and-restrictions-private") 
+                            h3 Land Use Controls and Restrictions - Private
+                            .mini-progress-bar-container
+                                .mini-progress-bar
+                    .col-sm-6.col-md-4.col-lg-3.text-center
+                        a.re-card.transition(href="/lessons/transfer-and-alienation-of-title-to-real-property-voluntary") 
+                            h3 Transfer and Alienation of Title to Real Property - Voluntary
+                            .mini-progress-bar-container
+                                .mini-progress-bar
+                    .col-sm-6.col-md-4.col-lg-3.text-center
+                        a.re-card.transition(href="/lessons/transfer-and-alienation-of-title-toreal-property-involuntary") 
+                            h3 Transfer and Alienation of Title to Real Property - Involuntary
+                            .mini-progress-bar-container
+                                .mini-progress-bar
+                    .col-sm-6.col-md-4.col-lg-3.text-center
+                        a.re-card.transition(href="/lessons/deeds-warranties-and-defects-in-title") 
+                            h3 Deeds, Warranties, and Defects in Title
+                            .mini-progress-bar-container
+                                .mini-progress-bar
+                    .col-sm-6.col-md-4.col-lg-3.text-center
+                        a.re-card.transition(href="/lessons/assurances-of-title") 
+                            h3 Assurances of Title
+                            .mini-progress-bar-container
+                                .mini-progress-bar
+                        .space
+
+        .container-fluid.lesson-card-container.alt-background
+            .space
+            .container
+                h2.text-center Real Estate Finance And Settlement
+                .row
+
+                    .col-sm-6.col-md-4.col-lg-3.text-center
+                        a.re-card.transition(href="/lessons/elements-of-real-and-personal-property/overview") 
+                            h3 Elements of Real and Personal Property
+                            .mini-progress-bar-container
+                                .mini-progress-bar
+                    .col-sm-6.col-md-4.col-lg-3.text-center
+                        a.re-card.transition(href="/lessons/methods-of-legal-description") 
+                            h3 Methods of Legal Description
+                            .mini-progress-bar-container
+                                .mini-progress-bar
+                    .col-sm-6.col-md-4.col-lg-3.text-center
+                        a.re-card.transition(href="/lessons/estates-in-real-property") 
+                            h3 Estates in Real Property
+                            .mini-progress-bar-container
+                                .mini-progress-bar
+                    .col-sm-6.col-md-4.col-lg-3.text-center
+                        a.re-card.transition(href="/lessons/forms-rights-interests-and-obligations-of-ownership") 
+                            h3 Forms, Rights, Interests, and Obligations of Ownership
+                            .mini-progress-bar-container
+                                .mini-progress-bar
+                    .col-sm-6.col-md-4.col-lg-3.text-center
+                        a.re-card.transition(href="/lessons/land-use-controls-and-restrictions-public") 
+                            h3 Land Use Controls and Restrictions - Public
+                            .mini-progress-bar-container
+                                .mini-progress-bar
+                    .col-sm-6.col-md-4.col-lg-3.text-center
+                        a.re-card.transition(href="/lessons/land-use-controls-and-restrictions-private") 
+                            h3 Land Use Controls and Restrictions - Private
+                            .mini-progress-bar-container
+                                .mini-progress-bar
+                    .col-sm-6.col-md-4.col-lg-3.text-center
+                        a.re-card.transition(href="/lessons/transfer-and-alienation-of-title-to-real-property-voluntary") 
+                            h3 Transfer and Alienation of Title to Real Property - Voluntary
+                            .mini-progress-bar-container
+                                .mini-progress-bar
+                    .col-sm-6.col-md-4.col-lg-3.text-center
+                        a.re-card.transition(href="/lessons/transfer-and-alienation-of-title-toreal-property-involuntary") 
+                            h3 Transfer and Alienation of Title to Real Property - Involuntary
+                            .mini-progress-bar-container
+                                .mini-progress-bar
+                    .col-sm-6.col-md-4.col-lg-3.text-center
+                        a.re-card.transition(href="/lessons/deeds-warranties-and-defects-in-title") 
+                            h3 Deeds, Warranties, and Defects in Title
+                            .mini-progress-bar-container
+                                .mini-progress-bar
+                    .col-sm-6.col-md-4.col-lg-3.text-center
+                        a.re-card.transition(href="/lessons/assurances-of-title") 
+                            h3 Assurances of Title
+                            .mini-progress-bar-container
+                                .mini-progress-bar
+                        .space
+
+
+block footer-scripts
+    script(src="/js/lessonList.vm.js")

@@ -1,0 +1,34 @@
+doctype html
+html
+    head
+        title= title
+        meta(name="description", content="#{description}")
+        meta(name="keywords", content="#{keywords}")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no")
+        link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Serif")
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css")
+        link(rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+        link(rel="stylesheet" href="/stylesheets/css/rpg-awesome.min.css")
+        
+        link(rel='stylesheet' href='/stylesheets/css/main.css')
+        link(rel='shortcut icon' href='/images/favicon.ico')
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.1/vue.min.js")
+        block stylesheets
+        block head-scripts
+    body
+
+        include the-navbar
+        #main.main-background
+            block content
+        include the-footer
+        
+        script.
+            var user = !{JSON.stringify(user)}
+        //- jQuery is needed for bootstrap components. 
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js")
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js")
+        script(src="https://www.gstatic.com/charts/loader.js")
+        script(src="/js/profileOrLogin.vm.js")
+        script(src="/js/loginForm.vm.js")
+        block footer-scripts
+

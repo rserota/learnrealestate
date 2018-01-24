@@ -1,0 +1,121 @@
+[data-tooltip]
+    border-bottom 2px dotted #333
+
+.main-background
+    background-color $mainColor
+
+.alt-background
+    background-color $altBackground
+    border-bottom 2px solid $black
+    border-top 2px solid $black
+
+button.btn:focus
+    outline none
+
+button.btn-primary
+    background-color $navBlue
+
+[v-cloak]
+    display none
+
+
+.learn
+    color #fff63e
+
+.real-estate
+    color ghostwhite
+
+.learn, .real-estate
+    font-family georgia
+    font-size 2rem
+
+.contract-img
+    width 100%
+
+
+.re-card
+    background-color $secondaryColor
+    border 1px solid $black 
+    border-radius 10px
+    padding 15px
+
+
+
+.panel-heading
+    cursor pointer
+
+
+a.transition:hover, button.transition:hover
+    transition all .6s
+
+
+.re-progress-container
+    width 90%
+    border 2px solid $black
+    height 30px
+    border-radius 20px
+    margin 10px auto
+    overflow hidden
+
+#progress-pie-chart div[dir="ltr"]
+    margin auto
+
+.re-progress-bar
+    background-color $progressGreen
+    height 130%
+    border 2px solid rgb(100,140,100)
+    position relative
+    bottom 5px
+    right 2px
+    background-image: repeating-linear-gradient(-45deg, rgb(43,194,83), rgba(43,194,84,1) 20px, transparent 20px, transparent 40px);
+
+.mini-progress-bar-container
+    position absolute
+    overflow hidden
+    bottom 0
+    left 0
+    height 25px
+    border-top 2px solid $black
+    border-bottom-left-radius 8px
+    border-bottom-right-radius 8px
+    width 100%
+
+.mini-progress-bar
+    height 25px
+    border-right 2px solid rgb(100,140,100)
+    background-color $progressGreen
+    width 0%
+    display none
+    background-image: repeating-linear-gradient(-45deg, rgb(43,194,83), rgba(43,194,84,1) 20px, transparent 20px, transparent 40px);
+
+
+
+
+#day-streak-container img
+    height 6rem
+
+.badge-container
+    display inline-block
+    border 2px solid black
+    border-radius 100px
+    height 8rem
+    width 8rem
+    background radial-gradient(ellipse at center, #b5bdc8 0%,#828c95 36%,#28343b 100%)
+
+.badge-container i
+    font-size 4.2rem
+    color ghostwhite
+    top 50%
+    left 50%
+    transform translateX(-50%) translateY(-50%)
+
+.badge-container.locked
+    border 2px dashed black
+    
+
+.day-streak-number
+    top 59%
+    left 50%
+    transform translateX(-50%) translateY(-50%)
+    font-size 3rem
+    color white

@@ -1,0 +1,308 @@
+extends /views/lessons/lesson-overview-layout
+
+block content
+    .space
+    .container
+        p: a(href=lessonListUrl) <i class="fa fa-arrow-left"></i> Return to #{section} 
+        .re-card
+            .row
+                include /views/progress-bar
+                hr
+            .row
+                .col-sm-3
+                    include /views/lessons/learn-sidebar.pug
+                .col-sm-9.border-left
+                    h2 Lesson 2 - Fair Housing
+                    .small-space
+                    h3 Before You Begin:
+                    ul
+                        li Read <b>Unit 3: Fair Housing</b> in <i>Modern Real Estate Practice</i>
+                        li Lesson Length: Approximately 1-hour
+                    h3 When you master Lesson 2, you will be able to: 
+                    ul
+                        li <b>explain</b> the significance of the <span data-tooltip="civil-rights-act-of-1866"> Civil Rights Act of 1866</span> and the constitutional legal framework as they relate to and affect the equal opportunity in housing; 
+                        li <b>describe</b> and explain the various federal laws which protect Americans from unfair housing practices; 
+                        li <b>describe</b> <span data-tooltip="blockbusting"> blockbusting</span>, <span data-tooltip="steering"> steering</span>, <span data-tooltip="redlining"> redlining</span>, and other abusive housing practices; 
+                        li <b>list</b> the various recourses available to the aggrieved person who believes illegal discrimination has occurred including acts against real estate professionals; and
+                        li <b>describe</b> the importance of real estate professionals understanding and complying with fair housing laws.
+        .space
+        .re-card
+            .row
+                .col-sm-9
+                    h2.text-center Equal Opportunity in Housing
+                    .small-space   
+                    ul 
+                        li All real estate professionals must be aware of federal, state, and local fair housing laws. 
+                        li The purpose of these laws is to create an open, unbiased housing market in which every person has the opportunity to live where a person chooses within the ability to pay.
+                        li Failure to comply with the laws is not only a criminal act, but may also be grounds for disciplinary action against a <span data-tooltip="license"> license</span>e.
+                    img.center-block(width="50%" src="/images/lessons/lesson2images/equal.jpg")
+                    .small-space
+                .col-sm-3
+                    .re-card
+                         p <i class="fa fa-exclamation-triangle fa-4x fa-pull-left" style="color: #cc3dc7"></i>A <span data-tooltip="license"> license</span>e’s activities affect their reputation and can have serious legal consequences. Learn your local protected classes, be mindful of your actions, keep good records, and take continuing education that covers these topics.
+  
+        .space
+        .re-card
+            .row
+                .col-sm-9
+                    h2.text-center The <span data-tooltip="civil-rights-act-of-1866"> Civil Rights Act of 1866</span>
+                    .small-space
+                    ul 
+                        li The <span data-tooltip="civil-rights-act-of-1866"> Civil Rights Act of 1866</span> prohibits any type of discrimination based on race, without exception. 
+                        li The Act was largely ignored in property transactions until 1968, when the Supreme Court decided the right from racial discrimination is Constitutionally guaranteed in the act through the 13th Amendment, which prohibits slavery (Jones v. Mayer)
+                    img.center-block(width="75%" src="/images/lessons/lesson2images/civilcartoon.jpg")
+                    .small-space
+                .col-sm-3
+                    .re-card
+                        p <i class="fa fa-user fa-4x fa-pull-left" style="color: #3dcc51"></i> Courts have expanded the definition of race to include ancestral and ethnic characteristics, including certain physical, cultural, or linguistic traits that are shared by a group with a common <span data-tooltip="national-origin"> national origin</span>. 
+        .space
+        .re-card
+            .row
+                .col-sm-9 
+                    h2.text-center The Fair Housing Act
+                    .small-space
+                    h3 The Fair Housing Act established protected classes, meaning in the US an individual cannot be discriminated against based on: 
+                    .small-space
+                    ul 
+                        li <span data-tooltip="familial-status"> Familial status</span>: a landlord or seller cannot use advertising or occupancy standards with the intent or effect of restricting families with children.
+                        li Disability: a landlord must provide accommodations and allow reasonable property modifications that are necessary, at the tenants’ expense. 
+                        li Race
+                        li Color
+                        li <span data-tooltip="national-origin"> National Origin</span>
+                        li Religion
+                        li Sex
+                    .small-space
+                    h3 Exemptions to the Fair Housing Act
+                    .small-space
+                    p There are several circumstances where a property owner does not need to abide by the Fair Housing Act. These include: 
+                    ul
+                        li During the sale or rental of a single-family residence when all the following criteria is met (THIS DOES NOT APPLY IN COLORADO):
+                            ol
+                                li The home is owned by an individual who does not own more than three such homes at one time (and does not sell more than one every two years)
+                                li A real estate <span data-tooltip="license"> license</span>e is not involved 
+                                li Discriminatory advertising is not used
+                                li Discrimination based on race is still forbidden 
+                        li The rental of rooms or units in an owner-occupied one-to four-family dwelling (THIS DOES NOT APPLY IN COLORADO).
+                        li Dwelling units owned by religious organizations may be restricted to people of the same religion if membership in the organization is not restricted based on the protected classes.
+                        li A private club that is not open to the public may restrict the rental or occupancy of the lodgings that it owns to its members if the lodgings are not operated commercially and membership is not restricted on the basis of the protected classes.
+                        li Housing for older persons is exempt from the <span data-tooltip="familial-status"> familial status</span> protection if:
+                            ol
+                                li The home is intended for persons at least 62 years old
+                                li At least 80 percent of the units are occupied by at least one person at least 55 years of age
+                    h3 Enforcement of the Fair Housing Act
+                    .small-space
+                    ul
+                        li Enforcement is administered by the Office of Fair Housing and Equal Opportunity (OFHEO) under the direction of the Secretary of HUD.
+                        li A complainant has one year after the alleged act of discrimination to file a charge with HUD or two years to bring a federal suit.
+                        li  HUD will investigate to see if discrimination occurred. HUD will attempt to resolve by <span data-tooltip="conciliation"> conciliation</span>.
+                        li Unless someone connected with the charge requests that it be heard in federal district court, an administrative law judge from HUD will hear the charge.
+                        li The administrative law judge has the authority to issue an injunction, award actual damages, and impose civil penalties:
+                            ol
+                                li Up to $16,000 for first offense
+                                li Up to $37,500 for second offense within 5 years
+                                li Up to $65,000 for further violations within 7 years
+                    img.center-block(width="75%" src="/images/lessons/lesson2images/civil.jpg")
+                    p.text-center President Johnson signs the <span data-tooltip="civil-rights-act-of-1968"> Civil Rights Act of 1968</span>
+                    .small-space 
+                .col-sm-3
+                    .re-card
+                        p <i style="color: #fff63e" class="fa fa-home fa-4x fa-pull-left"></i> The Fair Housing Act (Title VIII of the <span data-tooltip="civil-rights-act-of-1968"> Civil Rights Act of 1968</span>) prohibits discrimination in housing. 
+        .space
+        .re-card
+            .row
+                .col-sm-9 
+                    h2.text-center The Americans with Disabilities Act (ADA)
+                    .small-space
+                    ul 
+                        li The Americans with Disabilities Act provides for nondiscriminatory employment procedures and accessibility to goods and services by people with disabilities.
+                        li The ADA <i>does not</i> include current illegal use of or addiction to a controlled substance nor conviction of the illegal manufacture or distribution of a controlled substance, including marijuana (marijuana, while legal and used medicinally in Colorado, is still federally illegal and therefore not covered under the ADA). 
+                        li The ADA <i>does</i> protect individuals in addiction recovery programs
+                        li The ADA <i>does</i> protect individuals who have AIDS
+                    .small-space
+                    ul
+                        li Title I of the ADA applies to employers: qualified job applicants, regardless of disability, must be provided with reasonable accommodations in order to perform their essential job functions. 
+                        li Title III of the ADA applies to businesses and public services: for example, handicap accessible parking spaces, ramps, and bathrooms. 
+                    .small-space
+                    img.center-block(width="75%" src="/images/lessons/lesson2images/bush.jpg") 
+                    p.tex-center President Bush signs the Americans with Disabilities Act on the White House South Lawn on July 26, 1990. 
+                    .small-space
+                .col-sm-3
+                    .re-card
+                        p <i class="fa fa-wheelchair-alt fa-4x fa-pull-left" style="color: #3da1cc"></i> Disability means physical or mental impairment (or having a history of same) that substantially limits one or more major life activities. 
+        
+        .space
+        .re-card
+            .row
+                .col-sm-9 
+                    h2.text-center Fair Housing Practices
+                    .small-space
+                    ul 
+                        li <span data-tooltip="blockbusting"> Blockbusting</span>: inducing homeowners to sell by claiming negative impacts on their property values from the entry or prospective entry into the neighborhood by people in the protected classes. “You should really sell your home since those *protected class* people just moved in next door. Just think what they’ll do to your property value!” 
+                        li <span data-tooltip="steering"> Steering</span>: channeling homeseekers into or away from a particular area on the basis of race, color, religion, <span data-tooltip="national-origin"> national origin</span>, or other protected class; the effect of limiting choices. “You don’t want to live in that neighborhood, there are too many of those *protected class* people. 
+                        li <span data-tooltip="redlining"> Redlining</span>: refusing to make mortgage loans or issue insurance policies in specific areas for reasons other than the economic qualifications of the applicant. <span data-tooltip="redlining"> Redlining</span> refers to the literal practice of drawing a line around neighborhoods on a map for the purposes of discrimination. 
+                    img.center-block(width="75%" src="/images/lessons/lesson2images/map.jpg")
+                    p.text-center A <i>Home Owners' Loan Corporation</i> 1936 security map of Philadelphia showing <span data-tooltip="redlining"> redlining</span> of lower income neighborhoods. Households and businesses in the red zones could not get mortgages or business loans.
+                    .small-space
+                    ul
+                        li Appraising: one cannot consider factors related to the protected classes when preparing valuations or appraisals. The presence of a protected class does not affect property values. 
+                        li Intent and effect: even without the intention to discriminate, certain activities can have that effect. A real estate agent’s intentions will not protect them from the legal, ethical, and professional consequences of discrimination.  
+                        li Response to concerns of terrorism: landlords and property managers need to take care that security procedures designed to protect against terrorism do not violate fair housing rights.
+                        li Advertising: language that indicates a preference or limitation is discriminatory, such as trying to attract one population to exclusion of others. 
+                    .small-space
+                    h3 HUD’s Advertising Guidelines:
+                    .small-space
+                    table
+                        tr(bgcolor="#F5F5F5") 
+                            th Category
+                            th Rule
+                            th Permitted
+                            th Not Permitted
+                        tr
+                            td 
+                                p Race 
+                                p Color
+                                p <span data-tooltip="national-origin"> National origin</span>
+                            td No discriminatory limitation/preference may be expressed
+                            td 
+                                p “master bedroom”
+                                p “good neighborhood”
+                            td 
+                                p “exclusive neighborhood”
+                                p “English-speaking only”
+                        tr
+                            td Religion
+                            td No <span data-tooltip="religious-preference"> religious preference</span>/limitation
+                            td
+                                p “chapel on premises”
+                                p “kosher meals available”
+                                p “Merry Christmas”
+                            td 
+                                p “no Muslims”
+                                p “nice Christian family”
+                                p “near great Catholic school”
+                        tr
+                            td Sex
+                            td No explicit preference based on sex
+                            td
+                                p “mother-in-law suite”
+                                p “master bedroom”
+                                p “female roommate sought”
+                            td 
+                                p “great bachelor pad”
+                                p “wife's dream kitchen” 
+                        tr
+                            td Disability
+                            td No exclusions or limitations based on disability
+                            td 
+                                p “wheelchair ramp”
+                                p “walk to shopping”
+                            td 
+                                p “no wheelchairs”
+                                p “able-bodied tenants only”
+                        tr
+                            td <span data-tooltip="familial-status"> Familial Status</span>
+                            td No preference or limitation based on family size or nature
+                            td
+                                p “two-bedroom”
+                                p “family room”
+                                p “quiet neighborhood”
+                            td 
+                                p “married couple only”
+                                p “no more than two children”
+                                p “empty nester's dream house”
+                        tr 
+                            td Photographs or Illustrations of People
+                            td People should be clearly representative and nonexclusive
+                            td Illustrations showing multiple ethnicities, family groups, singles, etc.
+                            td Illustrations showing only individuals in ethnic dress, African American families, mature white adults, etc.
+
+                    .small-space
+                .col-sm-3
+                     .re-card
+                        p <i class="fa fa-times-circle-o fa-4x fa-pull-left" style="color: #cc3d3d"></i> These illegal housing practices were once commonplace, and still happen today. 
+        
+        .space
+        .re-card
+            .row
+                .col-sm-9
+                    h2.text-center Colorado Fair Housing
+                    .small-space
+                    h3 Colorado has additional protected classes, including: 
+                    ul 
+                        li Creed (a statement of the shared beliefs of a religious community)
+                        li Ancestry
+                        li Sexual Orientation (including transgender status)
+                        li Marital Status
+                    .small-space
+                    h3 Individual cities can also have their own expanded list of protected classes, for example Boulder also includes:
+                    ul
+                        li Age
+                        li Custody of a Minor Child
+                        li Gender Variance
+                        li Genetic Characteristics
+                        li Parenthood 
+                        li Pregnancy
+                    .small-space
+                .col-sm-3
+                    .re-card
+                        p <i class="fa fa-map-marker fa-4x fa-pull-left" style="color: #8a3dcc"></i> Colorado state and local laws are more restrictive than federal law.  
+        .space
+        .re-card
+            .row
+                .col-sm-9
+                    h2 <u>Case Studies</u>
+                    .small-space
+                    ol
+                        li A landlord refused to rent an apartment to a couple where the wife was pregnant because the landlord was aware that the apartment had lead-based paint. The landlord told the rental agent that he understood there was a law that required him to remove the lead paint but he didn’t have the money to do so. About a year later, the landlord rented the apartment to a single person.
+                            ol(type="a")
+                                li Do you think the landlord violated the Fair Housing Act? Why or why not?
+                                li Do you think the rental agent violated the Fair Housing Act? Why or why not?
+                            .small-space
+                            .panel.panel-default
+                                .panel-heading(data-toggle="collapse" href="#collapseOne") Explanation
+                                .collapse#collapseOne
+                                    p This case is based on HUD v. DiBari, No. HUDALJ 01-90-0511-1 (1992). It was decided in the favor of the plaintiff (the couple). The Fair Housing Act includes nothing that allows the landlord to decide that risks of a dwelling make it unacceptable for families. In this case, the agent was not also sued but she might have incurred liability, too.
+                            .small-space
+                        li In Washington D.C., a fair housing organization and a black professor filed a lawsuit that charged discriminatory advertising against a condominium and apartment complex located nearby in Virginia. The lawsuit charged that the complex only used white models in its advertising. The lawsuit did not allege denial of housing opportunity based on race.
+                            ol(type="a")
+                                li Do you think the complex’s practices violated the Fair Housing Act? Why or why not?
+                            .small-space
+                            .panel.panel-default
+                                .panel-heading(data-toggle="collapse" href="#collapseTwo") Explanation
+                                .collapse#collapseTwo
+                                    p This case is based on Spann v. Colonial Village, Inc. 899 F.2d 24, 27 (DC Cir. 1990). This case was settled when the complex agreed to pay the plaintiffs $835,000. In addition, they agreed to establish advertising policy that any human models would represent both majority and minority groups in the D.C. area.
+                        .small-space
+                        li A lawsuit was brought against two real estate companies for <span data-tooltip="steering"> <span data-tooltip="steering"> steering</span></span> black homebuyers to look at homes in one part of a town and white homebuyers to look in another. The real estate companies defended their case on the basis that the town “homebuyers” in the suit were testers and not actual prospective buyers. Therefore, these individuals were not economically damaged and had no basis to sue under the Fair Housing Act. The town government, which had also joined in the suit, was also not economically damaged and thereby could not sue, according to the defendants. 
+                            ol(type="a")
+                                li Do you think these homebuyers and the town government had a legal basis to sue under the Fair Housing Act? Why or why not?
+                            .small-space
+                            .panel.panel-default
+                                .panel-heading(data-toggle="collapse" href="#collapseThree") Explanation
+                                .collapse#collapseThree
+                                    p This case is based on Gladstone Realtors v. Village of Bellwood, 441 U.S. 91, 99-100 (1979). In this case, the U.S. Supreme Court held the conduct of the firms was illegal <span data-tooltip="steering"> <span data-tooltip="steering"> steering</span></span>. The plaintiffs’ assertion that they were being denied the right to live in an integrated community was considered to be sufficient economic injury.
+                    .small-space
+                .col-sm-3
+                    .re-card
+                        p <i class="fa fa-gavel fa-4x fa-pull-left" style="color: #cc3dc7"></i> <a href="https://www.fairhousingcoach.com/category/online-alerts/cases-and-settlements" target="_blank">CLICK HERE for additional real-world examples of fair housing violations</a>
+        .space
+        .re-card
+            .row
+                .col-sm-9
+                    h2 <u>Word List</u>
+                    .small-space
+                    p <span data-tooltip="administrative-proceedings administrative-proceeding"> Administrative Proceedings</span>
+                    p <span data-tooltip="blockbusting"> Blockbusting</span>
+                    p <span data-tooltip="civil-action"> Civil Action</span>
+                    p <span data-tooltip="civil-rights-act-of-1866"> Civil Rights Act of 1866</span>
+                    p <span data-tooltip="civil-rights-act-of-1968"> Civil Rights Act of 1968</span>
+                    p <span data-tooltip="conciliation"> Conciliation</span>
+                    p <span data-tooltip="fair-housing-amendments-act-of-1988"> Fair Housing Amendments Act of 1988</span> 
+                    p <span data-tooltip="familial-status"> Familial Status</span> 
+                    p <span data-tooltip="judgement"> Judgement</span>
+                    p <span data-tooltip="national-origin"> National Origin</span>
+                    p <span data-tooltip="redlining"> Redlining</span>
+                    p <span data-tooltip="religious-preference"> Religious Preference</span>
+                    p <span data-tooltip="sexual-preference"> Sexual Preference</span>
+                    p <span data-tooltip="steering"> Steering</span>
+                    p <span data-tooltip="stereotyping"> Stereotyping</span>
+                    .small-space

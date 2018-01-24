@@ -1,0 +1,26 @@
+.modal.fade#login-modal(tabindex="-1" data-toggle="modal" role="dialog")
+    .modal-dialog(role="document")
+        form.login-form(v-on:submit.prevent="submitLoginForm").modal-content
+            .modal-header
+                button.close(type="button" data-dismiss="modal"): span &times;
+                h4.modal-title#myModalLabel Log In
+            .modal-body
+                
+                .container-fluid
+                    .row
+                        .col-sm-4
+                            .re-label Email
+                        .col-sm-8    
+                            .email-container: input.form-control(name="email" type="email" v-model="user.email")
+                    .row
+                        .col-sm-4
+                            .re-label Password
+                        .col-sm-8    
+                            .password-container: input.form-control(name="password" type="password" v-model="user.password")
+                .space
+                .contact-sales Don't have an account yet? <a href="/contact-sales">Contact sales</a>. 
+                    
+            .modal-footer
+                button.btn.btn-default(type="button" data-dismiss="modal") Close
+                button.btn.btn-success(type="submit") Log In
+    

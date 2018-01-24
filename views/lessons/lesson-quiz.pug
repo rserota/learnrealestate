@@ -1,0 +1,56 @@
+extends /views/layout
+
+block content
+    #learn-lesson-container(v-cloak)
+        .space
+        .lesson-card.transition(v-bind:class="{transparent:transparent}")
+            .lesson-card-content
+                h3.text-center.question-text {{questions[0].question}}
+                .small-space
+                .answer-choices-list.transition(v-bind:class="{transparent:answerChoicesAreTransparent, hidden:!answerChoicesAreDisplayed}")
+                    ul
+                        li
+                            .row
+                                .col-xs-1
+                                    input.first-choice(type="radio" v-on:click="chooseAnAnswer"   v-model="chosenAnswer" v-bind:value="questions[0].answers[0]")
+                                .col-xs-9
+                                    .answer-choice {{questions[0].answers[0].text}}
+                            hr
+                        li
+                            .row
+                                .col-xs-1
+                                    input.second-choice(type="radio" v-on:click="chooseAnAnswer" v-model="chosenAnswer" v-bind:value="questions[0].answers[1]")
+                                .col-xs-9
+                                    .answer-choice {{questions[0].answers[1].text}}
+                            hr
+                        li
+                            .row
+                                .col-xs-1
+                                    input.third-choice(type="radio" v-on:click="chooseAnAnswer" v-model="chosenAnswer" v-bind:value="questions[0].answers[2]")
+                                .col-xs-9
+                                    .answer-choice {{questions[0].answers[2].text}}
+                            hr
+                        li
+                            .row
+                                .col-xs-1
+                                    input.fourth-choice(type="radio" v-on:click="chooseAnAnswer" v-model="chosenAnswer" v-bind:value="questions[0].answers[3]")
+                                .col-xs-9
+                                    .answer-choice {{questions[0].answers[3].text}}
+                .rationale.transition(v-bind:class="{transparent:rationaleIsTransparent, hidden:!rationaleIsDisplayed}")
+                    p(v-html="questions[0].rationale")
+                .space
+            .lesson-card-footer.alt-background.relative.transition(v-bind:class="{correct: chosenAnswer && chosenAnswer.correct && submitIsDisabled, incorrect: chosenAnswer && !chosenAnswer.correct && submitIsDisabled}")
+                h1.text-center.answer-status(v-bind:class="{hidden:!rationaleIsDisplayed}") {{chosenAnswer ? (chosenAnswer.correct ? 'True' : 'False') : ''}}
+                button.submit-answer.btn.btn-primary.btn-lg.transition(v-bind:class="{disabled:submitIsDisabled,transparent:answerChoicesAreTransparent, hidden:!answerChoicesAreDisplayed}" v-on:click="submitAnswer") Submit
+                button.next-question.btn.btn-primary.btn-lg.transition(v-bind:class="{disabled:nextIsDisabled, transparent:rationaleIsTransparent, hidden:!rationaleIsDisplayed}" v-on:click="nextQuestion") Next <i class="fa fa-arrow-right"></i>
+                button.btn.btn-default#questions-remaining-widget.transition
+                    span {{numAnswered + 1}} / 
+                    span(v-once) {{questions.length}}
+
+block footer-scripts
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.3/howler.min.js")
+    script.
+        var questions = !{JSON.stringify(questions)} 
+    script.
+        var definitions  = !{JSON.stringify(definitions)} 
+    script(src="/js/learnLesson.vm.js")

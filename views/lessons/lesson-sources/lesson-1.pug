@@ -1,0 +1,190 @@
+extends /views/lessons/lesson-overview-layout
+
+block content
+    .space
+    .container
+        p: a(href=lessonListUrl) <i class="fa fa-arrow-left"></i> Return to #{section} 
+        .re-card
+            .row
+                include /views/progress-bar
+                hr
+            .row
+                .col-sm-3
+                    include /views/lessons/learn-sidebar.pug
+                .col-sm-9.border-left
+                    h2 Lesson 1 - Elements Of Real And Personal Property
+                    .small-space
+                    h3 Before You Begin:
+                    ul
+                        li Read <b>Unit 2: Real Property and the Law</b> in <i>Modern Real Estate Practice</i>
+                        li Lesson Length: Approximately 1-hour
+                    h3 When you master Lesson 1, you will be able to: 
+                    ul
+                        li <b>Discuss</b> the concepts of land and ownership rights in real property
+                        li <b>Distinguish</b> between real and personal property and the differences in transferring ownership and title
+                        li <b>Describe and explain</b> the basic economic and physical characteristics of real property
+                        li <b>Discuss</b> the limitations of the real estate professional under the law
+        .space
+        .re-card
+            .row
+                .col-sm-9
+                    h2.text-center Concepts of Ownership
+                    .space   
+                    p The bundle of legal rights includes the rights of:
+                    ol
+                        li <b>Possession</b> — the right to occupy the premises
+                        li <b>Control</b> — the right to determine certain interests for others
+                        li <b>Enjoyment</b> — possession without harassment or interference
+                        li <b>Exclusion</b> — legally refusing to create interests for others 
+                        li <b>Disposition</b> — determining how the property will be disposed 
+                    .space
+                    img(width="90%" src="/images/lessons/lesson1images/bundleofrights.png")
+                    .space
+                    p The word <i>Title</i> in real estate has two meanings: (1) the right to ownership of land (including the bundle of legal rights), and (2) evidence of ownership, such as a deed. Title refers to the <i>ownership</i> of real estate, not the deed itself. 
+                    .space
+                    img(width="75%" src="/images/lessons/lesson1images/land-rights.jpg")
+                    .space
+                    p Air rights may also be sold or leased independent of surface ownership.
+                .col-sm-3
+                    .re-card
+                         p <i class="fa fa-home fa-4x fa-pull-left" style="color: #3da1cc"></i>The ownership of real property, known as the bundle of legal rights, is a concept that comes from old English law.
+  
+        .space
+        .re-card
+            .row
+                .col-sm-9
+                    h2.text-center Personal Property vs Real Property
+                    .small-space
+                    ul
+                        li Personal property is movable; and is sometimes referred to as chattels. 
+                        .small-space
+                        li Real property, real estate, realty, or immovable property is any subset of land that has been legally defined and whose improvements come from human efforts. This includes buildings and roads, among other things. 
+                        .small-space
+                        li An item of real property may be changed to personal property through severance. For example, trees are real estate that becomes personal property when an owner cuts them down.
+                        .small-space
+                        li Construction materials routinely become real estate.
+                        .small-space
+                    h3 Plants fall into one of two categories:
+                    ol 
+                        li Trees, perennial shrubbery, and grasses not requiring annual cultivation are real property. 
+                        li Crops with a growing season of less than a year (annuals), known as emblements, are personal property (fructus industriales).
+                    img.center-block(width="75%" src="/images/lessons/lesson1images/cropsweb.jpg")
+                    .small-space
+                .col-sm-3
+                    .re-card
+                        p <i class="fa fa-tree fa-4x fa-pull-left" style="color: #25b24d"></i> A tenant is entitled to their crops (emblements). If a tenant loses possession of the land, he or she is still entitled to finish raising the crops and to harvest them.
+        .space
+        .re-card
+            .row
+                .col-sm-9 
+                    h2.text-center Fixture vs Trade-Fixture
+                    .small-space
+                    ul 
+                        li A fixture is an article that was once personal property but has been so affixed to land or a building that the law now recognizes it as part of the real property, like a light fixture, or plumbing.
+                        .small-space
+                        li A trade-fixture is an article owned by a tenant and attached to rented space or a building for use in operating a business, like a pizza oven in a pizzeria, which can be removed by a tenant when they vacate. 
+                        .small-space
+                    img.center-block(width="75%" src="/images/lessons/lesson1images/pizzaoven.jpeg")
+                    p.text-center (Pizza is personal property, and delicious)
+                .col-sm-3
+                    .re-card
+                        p <i style="color: #fff63e" class="fa fa-pie-chart fa-4x fa-pull-left"></i> To avoid confusion about which items are intended to be included in the sale, the inclusion of fixtures should be clarified both in the property listing and the sales contract.
+        .space
+        .re-card
+            .row
+                .col-sm-9 
+                    h2.text-center Characteristics of Real Property
+                    .small-space
+                    h3 Economic characteristics:
+                    ol 
+                        li Area preference or situs: Peoples' choices of one area or site over another is one of the most important economic characteristics.
+                        li Scarcity: Although the total supply of land is not in short supply, land of a particular quality or location may be limited.
+                        li Improvements: They can affect both the improved parcel and surrounding parcels, either favorably or unfavorably.
+                        li Permanence of investment: Improvements are considered to create fixed investments.
+                        
+                    .small-space
+                    h3 Physical characteristics:
+                    ol
+                        li Immobility: The geographic location of any given parcel of land can never be changed.
+                        li Indestructibility: Land is durable and indestructible, even though erosion, flood, volcanic action, and fire may change its topography and value.
+                        li Uniqueness: The law holds that no two parcels of land are exactly the same; this uniqueness is also known as "nonhomogeneity."
+                .col-sm-3
+                     .re-card
+                        p <i class="fa fa-map fa-4x fa-pull-left" style="color: #b63dcc"></i> Location is one of the most important factors in determining a property's value.
+        .space
+        .re-card
+            .row
+                .col-sm-9
+                    h2.text-center Laws Affecting Real Estate
+                    .small-space
+                    h3 Specific areas of law important to real estate practitioners:
+                    ol 
+                        li Contract Law
+                        li General property law
+                        li Agency law
+                        li Federal, state, and local law and regulations 
+                        li Federal regulations
+                        li Real estate license law
+                    .small-space
+                    h3 About real estate license laws:
+                    ol
+                        li The purpose is to protect the public from fraud, dishonesty, and incompetence in real estate transactions
+                        li Licensing is required by all 50 states, District of Columbia, and Canadian provinces
+                        li State laws are similar, but often differ in detail
+                        li There are specific education requirements for licensing – In Colorado it’s 168 hours of pre-licensing, what you’re doing now! 
+                  
+                .col-sm-3
+                    .re-card
+                        p <i class="fa fa-gavel fa-4x fa-pull-left" style="color: #b2253c"></i> Real estate practitioners may not act as attorneys.
+        .space
+        .re-card
+            .row
+                .col-sm-9
+                    h2 <u>Internet Resources</u>
+                    .small-space
+                    p <a href="https://www.colorado.gov/pacific/dora/division-real-estate" target="_blank">The Division of Regulatory Agencies</a> – DORA is the government agency that regulates Colorado Real Estate 
+                    p Cool things you can do on the DORA website: 
+                        ul 
+                            li Search the license of another agent – when were they licensed, where do they work, and have they faced disciplinary action from the real estate commission 
+                            li Renew your license once every 3-years 
+                            li Review up to date Colorado contracts and forms
+        .space
+        .re-card
+            .row
+                .col-sm-9
+                    h2 <u>Word List</u>
+                    .small-space
+                    p Accession
+                    p Air rights
+                    p Appurtenances
+                    p Area Preference
+                    p Attachment
+                    p Avulsion
+                    p Chattel 
+                    p Conversion 
+                    p Covenant 
+                    p Doctrine of Prior Appropriation
+                    p Doctrine of Highest and Best Use
+                    p Easement
+                    p Emblements
+                    p Erosion
+                    p Fixtures
+                    p Fructus Industriales
+                    p Hereditament
+                    p Heterogeneous
+                    p Immobility 
+                    p Improvement 
+                    p Indestructibility
+                    p License
+                    p Littoral Rights
+                    p Permanence 
+                    p Personal Property
+                    p Physical Deterioration
+                    p Realty, Real Property, Real Estate
+                    p Riparian Rights
+                    p Severance
+                    p Scarcity
+                    p Subsurface Rights
+                    p Surface Rights
+                    p Trade-Fixtures
+                    p Uniqueness

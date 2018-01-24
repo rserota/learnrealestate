@@ -1,0 +1,9 @@
+.re-card
+    .row
+        .col-sm-8
+            h2.text-center Progress To Next Level:
+            .re-progress-container
+                .re-progress-bar.transition-slow(v-bind:style="{width: toNextLevel}")
+            p.text-center Level {{level}}: {{levelTitles[level]}}
+        .col-sm-4
+            include /views/dashboard/day-streak

@@ -1,0 +1,28 @@
+{
+  "name": "estating",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-style": "stylus public/stylesheets/stylus/*.styl --out public/stylesheets/css",
+    "build-style-chromeos": "node ~/.npm-global/bin/stylus public/stylesheets/stylus/*.styl --out public/stylesheets/css",
+    "watch": "watch 'npm run build-style' ./public/stylesheets/stylus",
+    "deploy": "forever stopall; npm install;npm run build-style; npm run reset-test-user; forever start server.js",
+    "reset-questions": "cat ./models/csvs/questionSources/* > ./models/csvs/questions.tsv; mongo realestestate --eval 'db.questions.drop(); db.sectiontotal.drop()'; node ./utils/question-csv-parser",
+    "reset-definitions": "cat ./models/csvs/definitionSources/* > ./models/csvs/definitions.tsv; mongo realestestate --eval 'db.definitions.drop()'; node ./utils/definition-csv-parser",
+    "reset-test-user": "mongo realestestate --eval 'db.users.drop()'; node ./utils/register me@here.com dragons"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.16.0",
+    "client-sessions": "^0.7.0",
+    "csv": "^1.1.1",
+    "express": "^4.14.1",
+    "mongoose": "^4.8.1",
+    "pug": "^2.0.0-beta11",
+    "watch": "^1.0.2"
+  }
+}

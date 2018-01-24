@@ -1,0 +1,161 @@
+button#questions-remaining-widget
+    border-radius 314px
+    border 2px solid black
+    outline none
+    height 70px
+    width  70px
+    position absolute
+    top 0
+    left 10px
+    transform translateY(-50%)
+    z-index 50
+
+.lesson-button, .crossword-button
+    width 11rem
+    height 11rem
+    border-radius 200px
+    font-size 1rem
+    
+    i
+        font-size 3.6rem
+        top 25%
+        left 50%
+        transform translateX(-50%)
+    p
+        top 55%
+        left 50%
+        transform translateX(-50%)
+        font-size 1.2rem
+
+.lesson-button i, .crossword-button i
+    vertical-align sub
+    
+.lesson-card-container h1
+    margin-top 0
+    font-size 2rem
+
+.lesson-card-container h2
+    font-size 1.5rem
+
+.lesson-card-content
+    overflow auto
+
+#lesson-list .re-card
+    position relative
+    height 100px
+    display block
+    margin-top 10px
+    margin-bottom 10px
+    padding 5px
+    z-index 0
+
+    
+#lesson-list h3
+    font-size 16px
+
+
+
+.lesson-card-content .question-text
+    font-size 1.2rem
+    margin-top 2rem
+    margin-bottom 1rem
+    padding 0px 1rem
+    font-family 'Open Sans', sans-serif
+
+.submit-answer, .next-question
+    position absolute
+    bottom 50%
+    transform translateY(50%)
+    right 10px
+
+.answer-choices-list li
+    list-style-type none
+
+.answer-choice
+    font-size 1.0rem
+    vertical-align middle
+    margin-left 10px
+    display inline-block
+
+.answer-status
+    margin 0
+    font-size 3rem
+    position absolute
+    left 50%
+    top 50%
+    transform translateX(-50%) translateY(-50%)
+
+#learn-lesson-container .lesson-card
+    height 65vh
+    max-height 500px
+    max-width 800px
+    position relative
+    margin auto
+
+.lesson-card-content
+    height 80%
+    font-size 1.1rem
+    overflow-x hidden
+
+
+#learn-lesson-container .btn-primary
+    max-height 85%
+
+#learn-lesson-container .btn-primary.disabled
+    background-color #555
+    border-color #111
+    opacity .5
+
+
+.lesson-card-background-container
+    width 100%
+    overflow-x hidden
+
+.lesson-card-footer
+    height 20.5%
+    border-bottom-left-radius 8px
+    border-bottom-right-radius 8px
+    background-size 800%
+    background-image linear-gradient(to right, #f75656 12%,#aeaeae 15%,#aeaeae 84%,#71b75b 90%)
+    background-position 50%
+
+
+.lesson-card-footer.correct
+    background-position 100%
+
+.lesson-card-footer.incorrect
+    background-position 0%
+
+.lesson-card
+    background-color $secondaryColor
+    border 2px solid $black 
+    border-radius 10px
+    box-shadow 2px 2px 2px $black
+
+.collapse p, .collapsing p
+    padding 5px
+
+.rationale
+    padding 10px
+
+ul.fyi
+    margin-top 1rem
+
+.contract-img-container img
+    width 100%
+
+.contract-section
+    width 100%
+    height 3vw
+    border 1px dashed black
+    transform translateY(-50%)
+
+.contract-section:hover
+    background-color rgba(40,40,200,.4)
+
+#section4
+    top 19.95%
+
+@media screen and (max-width: 600px) {
+
+}
